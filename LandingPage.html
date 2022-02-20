@@ -7,44 +7,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!--Style in here-->
+    <script>
+        var color
+    </script>
     <style>
-        body {
+        * {
             margin: 0;
             padding: 0;
         }
 
         .head {
+            font-family: monospace;
+            display: flex;
             width: 100%;
             height: 50px;
             padding: 5px;
-            background-color: rgb(58, 58, 58);
-
+            background-color: rgb(27, 27, 27);
+            align-items: center;
         }
 
-        .head .navbar {
-            float: right;
-            margin-top: 15px;
+        .head p {
+            color: white;
+            flex: 1;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            margin-left: 20px;
+        }
+
+        .navbar {
+            margin-right: 40px;
         }
 
         .navbar button {
-            margin-right: 50px;
+            font-size: 15px;
+            margin-left: 20px;
             border: none;
             background-color: transparent;
+            color: rgb(116, 116, 116);
+            width: 70px;
+            height: 30px;
+        }
+
+        .navbar button:hover {
+            transition: 0.5s;
             color: white;
+            box-shadow: 0 2px white
+        }
+
+        .navbar button:active {
+            transition: 0.2s;
+            box-shadow: 0 2px rgb(27, 27, 27);
+            color: rgb(27, 27, 27);
+        }
+
+        .hero {
+            background-image: url("assets/bckground/nordwood-themes-nDd3dIkkOLo-unsplash.jpg");
+            height: 400px;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
     </style>
 </head>
 
 <body>
     <div class="head">
-        <img src="assets/icon/logo bela.png" alt="gambar rusak" height="30">
+        <p>Kopiku</p>
         <nav class="navbar">
             <button>Home</button>
+            <button>Product</button>
             <button>Profile</button>
             <button>About</button>
             <button>Contact</button>
         </nav>
     </div>
+    <div class="hero">
+        <h2>Contact me</h2>
+    </div>
+
 </body>
 
 </html>
